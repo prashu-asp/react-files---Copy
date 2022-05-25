@@ -32,7 +32,7 @@ class Counter extends Component {
                 <span>{this.state.count}</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <button onClick={this.handleIncrement}>Increment</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <button onClick={this.handleDecrement}>Decrement</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <button onClick={this.handleIncrement}>Delete</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button onClick={() => this.props.onDelete(this.props.id)}>Delete</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             </div>
 
         );
